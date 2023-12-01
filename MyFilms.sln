@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFilms.Api", "MyFilms.Api\MyFilms.Api.csproj", "{80CBF9D0-CEB9-4CBA-BC3C-4EBC445F23C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFilms.Api", "src\MyFilms.Api\MyFilms.Api.csproj", "{80CBF9D0-CEB9-4CBA-BC3C-4EBC445F23C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FDB5725F-3417-45BA-895F-2FE645521782}"
 EndProject
