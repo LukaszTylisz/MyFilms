@@ -4,7 +4,7 @@ using MyFilms.Application.Contracts.Persistence;
 using MyFilms.Application.Exceptions;
 
 namespace MyFilms.Application.Features.Movie.Commands.Create;
-
+    
 public class CreateMovieHandler : IRequestHandler<CreateMovieCommand, int>
 {
     private readonly IMovieRepository _movieRepository;

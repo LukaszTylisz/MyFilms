@@ -1,9 +1,9 @@
-﻿
+﻿using MyFilms.Domain.Common;
+
 namespace MyFilms.Domain;
 
-public class Movie
+public class Movie : BaseEntity
 {
-    public int Id { get; set; }
     public string? Title { get; set; }
     public int? Director { get; set; }
     public int Year { get; set; }
