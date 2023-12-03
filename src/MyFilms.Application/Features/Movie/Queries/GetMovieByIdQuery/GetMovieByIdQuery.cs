@@ -2,7 +2,4 @@
 
 namespace MyFilms.Application.Features.Movie.Queries.GetMovieByIdQuery;
 
-public class GetMovieByIdQuery : IRequest<MovieByIdDto>
-{
-    public int Id { get; set; }
-}
+public record GetMovieByIdQuery(int id) : IRequest<MovieByIdDto>;

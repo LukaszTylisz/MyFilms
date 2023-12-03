@@ -17,8 +17,8 @@ public class GetMovieByIdHandler : IRequestHandler<GetMovieByIdQuery, MovieByIdD
     }
     public async Task<MovieByIdDto> Handle(GetMovieByIdQuery request, CancellationToken cancellationToken)
     {
-        var movie = await _movieRepository.GetByIdAsync(request.Id) ??
-                    throw new NotFoundException(nameof(Domain.Movie), request.Id);
+        var movie = await _movieRepository.GetByIdAsync(request.id) ??
+                    throw new NotFoundException(nameof(Domain.Movie), request.id);
 
         var data = _mapper.Map<MovieByIdDto>(movie);
 
