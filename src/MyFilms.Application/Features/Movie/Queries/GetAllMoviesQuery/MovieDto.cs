@@ -2,5 +2,9 @@
 
 public class MovieDto
 {
-    public List<Domain.Movie>? MoviesDto { get; set; }
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public string Director { get; set; }
+    public int Year { get; set; }
+    public float Rate { get; set; }
 }

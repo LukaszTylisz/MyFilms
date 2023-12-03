@@ -5,7 +5,7 @@ using MyFilms.Application.Contracts.Persistence;
 
 namespace MyFilms.Application.Features.Movie.Queries.GetAllMoviesQuery;
 
-public class GetAllMoviesHandler : IRequestHandler<GetAllMoviesQuery, MovieDto>
+public class GetAllMoviesHandler : IRequestHandler<GetAllMoviesQuery, List<MovieDto>>
 {
     private readonly IMovieRepository _movieRepository;
     private readonly IMapper _mapper;
@@ -17,11 +17,11 @@ public class GetAllMoviesHandler : IRequestHandler<GetAllMoviesQuery, MovieDto>
         _mapper = mapper;
         _logger = logger;
     }
-    public async Task<MovieDto> Handle(GetAllMoviesQuery request, CancellationToken cancellationToken)
+    public async Task<List<MovieDto>> Handle(GetAllMoviesQuery request, CancellationToken cancellationToken)
     {
         var movies = await _movieRepository.GetAsync();
 
-        var data = _mapper.Map<MovieDto>(movies);
+        var data = _mapper.Map<List<MovieDto>>(movies);
         
         _logger.LogInformation("Movies were retrieved successfully");
 

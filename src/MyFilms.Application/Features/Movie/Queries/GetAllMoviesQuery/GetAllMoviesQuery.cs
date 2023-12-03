@@ -2,6 +2,6 @@
 
 namespace MyFilms.Application.Features.Movie.Queries.GetAllMoviesQuery;
 
-public class GetAllMoviesQuery : IRequest<MovieDto>
+public class GetAllMoviesQuery : IRequest<List<MovieDto>>
 {
 }
