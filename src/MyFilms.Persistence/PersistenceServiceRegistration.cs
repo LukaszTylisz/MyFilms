@@ -14,7 +14,7 @@ public static class PersistenceServiceRegistration
     {
         services.AddDbContext<MovieDatabaseContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("MyFilmsConnectionString")));
-
+        
         services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         services.AddScoped<IMovieRepository, MovieRepository>();
         return services;

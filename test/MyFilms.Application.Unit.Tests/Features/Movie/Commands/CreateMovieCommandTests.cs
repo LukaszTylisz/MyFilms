@@ -33,7 +33,7 @@ public class CreateMovieCommandTests
         await handler.Handle(new CreateMovieCommand() { Title = "Test1", Year = 2000
         }, CancellationToken.None);
 
-        var leaveTypes = await _mockRepo.Object.GetAsync();
-        leaveTypes.Count.ShouldBe(4);
+        var movie = await _mockRepo.Object.GetAsync();
+        movie.Count.ShouldBe(4);
     }
 }

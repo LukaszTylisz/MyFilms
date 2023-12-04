@@ -20,7 +20,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFilms.Persistence", "src\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E193A259-0C83-490F-A7F4-720F76586811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFilms.Application.Unit.Tests", "src\MyFilms.Application.Unit.Tests\MyFilms.Application.Unit.Tests.csproj", "{CED66F88-58BF-4689-AAC6-8C7092A61C9B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFilms.Application.Unit.Tests", "test\MyFilms.Application.Unit.Tests\MyFilms.Application.Unit.Tests.csproj", "{CED66F88-58BF-4689-AAC6-8C7092A61C9B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
