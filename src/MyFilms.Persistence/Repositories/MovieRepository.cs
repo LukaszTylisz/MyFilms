@@ -33,7 +33,10 @@ public class MovieRepository : GenericRepository<Movie>, IMovieRepository
             var movieDto = await response.Content.ReadAsAsync<List<MovieDto>>();
             foreach (var movie in movieDto)
             {
-                if (!await _context.Movies.AnyAsync(m => m.Id == movie.Id))
+                var existingMovie = await _context.Movies
+                    .FirstOrDefaultAsync(m => m.Id == movie.Id || m.Title == movie.Title);
+                
+                if (existingMovie == null)
                 {
                     await _context.Movies.AddAsync(new Movie
                     {
