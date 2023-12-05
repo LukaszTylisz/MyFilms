@@ -1,0 +1,18 @@
+[
+  {
+    "Id": 1,
+    "Email": "admin@example.com",
+    "FirstName": "John",
+    "LastName": "Doe",
+    "PasswordHash": "$2y$10$lVddAj3aozzwnH2G.hxwOO.ssj8UNLx6vOKUPc631aYIeUeuYs46q",
+    "RoleId": 1
+  },
+  {
+    "Id": 2,
+    "Email": "user@example.com",
+    "FirstName": "Jane",
+    "LastName": "Doe",
+    "PasswordHash": "$2y$10$rF2W1MV5W3qt6gDpIm7Nc.ukz5.w8qDoeS.VL1so.pQtIs4l15uXu",
+    "RoleId": 2
+  }
+]

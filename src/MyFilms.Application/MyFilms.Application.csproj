@@ -19,4 +19,9 @@
         <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Features\User\Commands\Update\" />
+      <Folder Include="Features\User\Queries\" />
+    </ItemGroup>
+
 </Project>

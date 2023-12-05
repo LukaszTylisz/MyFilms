@@ -1,0 +1,44 @@
+[
+  {
+    "Id": 165,
+    "Title": "Ruchomy zamek Hauru",
+    "Director": "Hayao Miyazaki",
+    "Year": 2004,
+    "Rate": 8.1
+  },
+  {
+    "Id": 168,
+    "Title": "Trainspotting",
+    "Director": "Danny Boyle",
+    "Year": 1996,
+    "Rate": 8.1
+  },
+  {
+    "Id": 171,
+    "Title": "Fargo",
+    "Director": "Joel Coen",
+    "Year": 1996,
+    "Rate": 8.1
+  },
+  {
+    "Id": 172,
+    "Title": "Labirynt",
+    "Director": "Denis Villeneuve",
+    "Year": 2013,
+    "Rate": 8.1
+  },
+  {
+    "Id": 173,
+    "Title": "Mój sąsiad Totoro",
+    "Director": "Hayao Miyazaki",
+    "Year": 1988,
+    "Rate": 8.1
+  },
+  {
+    "Id": 178,
+    "Title": "Na nabrzeżach",
+    "Director": "Elia Kazan",
+    "Year": 1954,
+    "Rate": 8.1
+  }
+  ]

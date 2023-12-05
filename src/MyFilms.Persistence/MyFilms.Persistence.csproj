@@ -22,5 +22,9 @@
     <ItemGroup>
       <ProjectReference Include="..\MyFilms.Application\MyFilms.Application.csproj" />
     </ItemGroup>
+    
+    <ItemGroup>
+      <Compile Remove="Seed.cs" />
+    </ItemGroup>
 
 </Project>

@@ -5,7 +5,7 @@ using MyFilms.Application.Exceptions;
 
 namespace MyFilms.Application.Features.Movie.Commands.Create;
     
-public class CreateMovieHandler : IRequestHandler<CreateMovieCommand, Unit>
+public class CreateMovieHandler : IRequestHandler<CreateMovieCommand, int>
 {
     private readonly IMovieRepository _movieRepository;
     private readonly IMapper _mapper;
@@ -15,7 +15,7 @@ public class CreateMovieHandler : IRequestHandler<CreateMovieCommand, Unit>
         _movieRepository = movieRepository;
         _mapper = mapper;
     }
-    public async Task<Unit> Handle(CreateMovieCommand request, CancellationToken cancellationToken)
+    public async Task<int> Handle(CreateMovieCommand request, CancellationToken cancellationToken)
     {
         var validator = new CreateMovieValidator(_movieRepository);
         var validatorResult = await validator.ValidateAsync(request);
@@ -27,6 +27,6 @@ public class CreateMovieHandler : IRequestHandler<CreateMovieCommand, Unit>
 
         await _movieRepository.CreateAsync(movieToCreate);
 
-        return Unit.Value;
+        return movieToCreate.Id;
     }
 }

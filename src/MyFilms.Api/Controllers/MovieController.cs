@@ -30,8 +30,8 @@ public class MovieController : ControllerBase
         return movies;
     }
 
-    [HttpGet("{id}")]
-    public async Task<ActionResult<MovieByIdDto>> GetById(int id)
+    [HttpGet("id")]
+    public async Task<ActionResult<MovieByIdDto>> Get(int id)
     {
         var movieById = await _mediator.Send(new GetMovieByIdQuery(id));
         return movieById;
@@ -44,7 +44,7 @@ public class MovieController : ControllerBase
     public async Task<ActionResult> Post(CreateMovieCommand movieCommand)
     {
         var response = await _mediator.Send(movieCommand);
-        return NoContent();  //CreatedAtAction(nameof(Get), new { id = response });
+        return CreatedAtAction(nameof(Get), new { id = response });
     }
 
     [HttpPut("{id}")]

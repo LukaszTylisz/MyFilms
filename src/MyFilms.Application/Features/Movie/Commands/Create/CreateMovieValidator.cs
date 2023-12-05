@@ -9,6 +9,11 @@ public class CreateMovieValidator : AbstractValidator<CreateMovieCommand>
 
     public CreateMovieValidator(IMovieRepository movieRepository)
     {      _movieRepository = movieRepository;
+        
+            RuleFor(x => x.Id)
+            .GreaterThan(0)
+            .MustAsync(MovieMustExist)
+            .WithMessage("{PropertyName} does not exist");
   
           RuleFor(x => x.Title)
               .NotEmpty().WithMessage("{PropertyName} is required")
