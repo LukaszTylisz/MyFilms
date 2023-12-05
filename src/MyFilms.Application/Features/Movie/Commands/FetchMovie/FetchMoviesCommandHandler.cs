@@ -17,12 +17,6 @@ public class FetchMoviesCommandHandler : IRequestHandler<FetchMoviesCommand, Uni
     }
     public async Task<Unit> Handle(FetchMoviesCommand request, CancellationToken cancellationToken)
     {
-        var validator = new FetchMoviesCommandValidator(_movieRepository);
-        var validatorResult = await validator.ValidateAsync(request);
-
-        if (validatorResult.Errors.Any())
-            throw new BadRequestException("Invalid Movie", validatorResult);
-
         await _movieRepository.FetchMovies();
         return Unit.Value;
     }

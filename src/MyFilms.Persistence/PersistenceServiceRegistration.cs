@@ -12,11 +12,12 @@ public static class PersistenceServiceRegistration
     public static IServiceCollection AddPersistenceServices(this IServiceCollection services,
         IConfiguration configuration)
     {
-        services.AddDbContext<MovieDatabaseContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("MyFilmsConnectionString")));
+        services
+            .AddDbContext<MovieDatabaseContext>(options =>
+                options.UseSqlServer(configuration.GetConnectionString("MyFilmsConnectionString")))
+            .AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>))
+            .AddScoped<IMovieRepository, MovieRepository>();
         
-        services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-        services.AddScoped<IMovieRepository, MovieRepository>();
         return services;
     }
 }

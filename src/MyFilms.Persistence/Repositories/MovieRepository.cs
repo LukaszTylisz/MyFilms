@@ -1,17 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using MyFilms.Application.Contracts.Persistence;
-using MyFilms.Application.Exceptions;
 using MyFilms.Application.Features.Movie.Queries.GetAllMoviesQuery;
 using MyFilms.Domain;
 using MyFilms.Persistence.DatabaseContext;
-using MyFilms.Persistence.Repositories;
-using Newtonsoft.Json;
 
-public interface IMovieRepository : IGenericRepository<Movie>
-{
-    Task<List<MovieDto>> FetchMovies();
-}
+namespace MyFilms.Persistence.Repositories;
 
 public class MovieRepository : GenericRepository<Movie>, IMovieRepository
 {
