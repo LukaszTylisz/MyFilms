@@ -8,7 +8,6 @@ Before you begin, ensure you have the following software installed on your syste
 
 - [.NET Core 8 SDK]
 - [Node.js]
-- 
 
 ## Development Setup
 1. Clone this repository:
