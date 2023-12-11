@@ -6,7 +6,9 @@ This is repository for a web application built with `ASP.NET Core 8 Web API`.  i
 
 Before you begin, ensure you have the following software installed on your system:
 
-- [.NET Core 8 SDK] 
+- [.NET Core 8 SDK]
+- [Node.js]
+- 
 
 ## Development Setup
 1. Clone this repository:
@@ -38,7 +40,7 @@ With Clean Architecture, the `Domain` and `Application` layers are at the center
 The Domain layer contains enterprise logic and types and the Application layer contains business logic and types.
 The Core shouldn’t be dependent on concerns such as `Persistence` (Data Access) and `Infrastructure`, so we invert those dependencies.
 
-This is achieved by adding interfaces and abstractions within Core, which are implemented by layers outside Core such as Infrastructure.  
+This is achieved by adding interfaces and abstractions within Core, which are implemented by layers outside Core such as Infrastructure. Front end site is made by Vue.js and it's connecting with backend using the WEB API. User can get all movies, get by Id, update, delete or fetch movies from external API. All data is saved in MSSQL database.
 
 All dependencies flow inwards, and Core has no dependencies on any other layers.
 Infrastructure and Presentation depend on Core, but not on one another.
@@ -61,7 +63,7 @@ This results in a design that is:
 - Fluent Validation
 - Automapper
 - Feature‑based folder organization
-- Entity Framework Core - Code First
+- Entity Framework Core
 - Repository Pattern
 - Swagger UI
 - In-Memory Database for Integration Tests
