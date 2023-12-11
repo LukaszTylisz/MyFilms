@@ -16,7 +16,11 @@ Before you begin, ensure you have the following software installed on your syste
 2. Create a database and apply migrations:
    ```bash
     dotnet ef database update
-3. Back end run on: https://localhost:7235/
+3. cd Client
+    ```bash
+    npm install
+4. npm run serve
+5. Back end run on: https://localhost:7235/ and front end on: http://localhost:8080
 
 ### Solution structure
 
