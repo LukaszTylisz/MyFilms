@@ -47,7 +47,7 @@ public class MovieController : ControllerBase
         return NoContent();  //CreatedAtAction(nameof(Get), new { id = response });
     }
 
-    [HttpPut("{id}")]
+    [HttpPut]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(400)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
