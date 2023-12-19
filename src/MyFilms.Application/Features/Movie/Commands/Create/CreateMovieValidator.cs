@@ -16,7 +16,7 @@ public class CreateMovieValidator : AbstractValidator<CreateMovieCommand>
   
           RuleFor(x => x.Year)
               .NotEmpty().WithMessage("{PropertyName} is required")
-              .InclusiveBetween(1900, 2000).WithMessage("{PropertyName} must be between 1900 and 2200");
+              .InclusiveBetween(1900, 2200).WithMessage("{PropertyName} must be between 1900 and 2200");
           
           RuleFor(x => x.Rate)
                           .NotEmpty().WithMessage("{PropertyName} can't be empty")
