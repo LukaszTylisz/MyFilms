@@ -21,7 +21,7 @@ Before you begin, ensure you have the following software installed on your syste
     ```bash
     npm install
 4. npm run serve
-5. Back end run on: https://localhost:7235/ and front end on: http://localhost:8080
+5. Back end run on: https://localhost:7235/ and front end on: https://localhost:8080
 
 ### Solution structure
 
@@ -31,6 +31,11 @@ Before you begin, ensure you have the following software installed on your syste
 
 ![image](https://github.com/LukaszTylisz/MyFilms/assets/86656091/e1bcb575-c17e-4174-b0f3-cc4ded1ee5bc)
 
+### Front end
+
+![image](https://github.com/LukaszTylisz/MyFilms/assets/86656091/edc4923d-249d-454a-b829-9894fb0d1276)
+
+It's not pretty yet, it was my first time with Vue.js
 
 ### Architecture overview
 
