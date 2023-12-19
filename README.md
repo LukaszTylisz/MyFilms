@@ -29,7 +29,7 @@ Before you begin, ensure you have the following software installed on your syste
 
 ### Swagger
 
-![image](https://github.com/LukaszTylisz/MyFilms/assets/86656091/f6a0f076-d3d0-404d-9dce-7fb2a7236a74)
+![image](https://github.com/LukaszTylisz/MyFilms/assets/86656091/e1bcb575-c17e-4174-b0f3-cc4ded1ee5bc)
 
 
 ### Architecture overview
