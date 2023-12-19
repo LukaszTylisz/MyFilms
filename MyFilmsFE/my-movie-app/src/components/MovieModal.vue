@@ -25,9 +25,9 @@
           <div class="modal-footer">
             <slot name="footer">
               <div class="btn-group" role="group" aria-label="Basic example">
-                <button v-if="edit" class="btn btn-success modal-default-button px-4 text-white" @click="updateMovie">Zapisz</button>
-                <button v-else class="btn btn-success modal-default-button px-4 text-white" @click="addMovie">Dodaj</button>
-                <button class="btn btn-info modal-default-button px-4 text-white" @click="$emit('close'), clearForm()">Cofnij</button>
+                <button v-if="edit" class="btn btn-success modal-default-button px-4 text-white" @click="updateMovie">Save</button>
+                <button v-else class="btn btn-success modal-default-button px-4 text-white" @click="addMovie">Add</button>
+                <button class="btn btn-info modal-default-button px-4 text-white" @click="$emit('close'), clearForm()">Undo</button>
               </div>
             </slot>
           </div>
